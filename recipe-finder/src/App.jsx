@@ -30,8 +30,9 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <>
       <Header />
+      <div className="app">
       <main className="main-content">
         {selectedRecipe ? (
           <RecipeDetail recipe={selectedRecipe} onBackClick={handleBackClick} />
@@ -42,7 +43,8 @@ function App() {
           </>
         )}
       </main>
-    </div>
+      </div>
+    </>
   );
 }
 
